@@ -1,54 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('./windows-xp-bliss-4k-lu-1920x1080.jpg');
-  }
-  
-  .App {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
-  
-  .App h1 {
-      color: #333;
-      margin-bottom: 10px;
-    }
-  
-  .App button {
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  
-  .App button:hover {
-      background-color: #3e8e41;
-    }
-  
-  .App .password {
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 30px;
-    }
-  
-  .App .copy-button {
-      background-color: #007bff;
-      margin-left: 15px;
-    }
-  
-  .App .copy-button:hover {
-      background-color: #0069d9;
-    }
-  
-  .App .copy-text {
-      font-size: 15px;
-      color: #666;
-      margin-left: 15px;
-    }
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./nobody-exterior-wall-page-empty_1258-257.avif');
+  background-size: cover;
+}
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #007bff;
+  --text-color: #333;
+  --background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.password {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.copy-button {
+  background-color: var(--secondary-color);
+  margin-left: 1rem;
+}
+
+.copy-button:hover {
+  background-color: #0069d9;
+}
+
+.copy-text {
+  font-size: 1rem;
+  color: #666;
+  margin-left: 1rem;
+}
